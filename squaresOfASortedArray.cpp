@@ -14,7 +14,7 @@ public:
     {
       squares[i] = nums[i] * nums[i];
     }
-    sort(squares.begin(), squares.end());
+    sort(squares.begin(), squares.end()); // sorts the vector in ascending order
     return squares;
   }
 };
