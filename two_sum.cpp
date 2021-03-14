@@ -14,9 +14,9 @@ public:
       if (sum == target)
         break; // dont need to return here since we return at the end of the while loop
       else if (sum < target)
-        right--;
-      else if (sum > target)
         left++;
+      else if (sum > target)
+        right--;
       else
         return data;
     }
