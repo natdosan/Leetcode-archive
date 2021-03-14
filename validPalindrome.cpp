@@ -23,3 +23,39 @@ public:
         return true;
     }
 };
+
+// this method only works on strings using alphanumeric characters
+
+/*
+copyright Nathaniel dlwlrma
+210313
+*/
+
+class Solution2
+{
+public:
+    bool isPalindrome(string s)
+    {
+        int left = 0;
+        int right = s.length() - 1;
+        while (left != right)
+        {
+            if (s[left] != s[right])
+            {
+                return false;
+            }
+            else if (s[left] == s[right])
+            {
+                left++;
+                right--;
+                if (left == right)
+                    break;
+                else if (left > right)
+                    break;
+            }
+            else
+                return false;
+        }
+        return true;
+    }
+};
